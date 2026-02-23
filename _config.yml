@@ -1,4 +1,4 @@
-theme: minima
+theme: Architect
 
 title: Avi Fishman
 description: >
@@ -7,7 +7,6 @@ description: >
 future: true
 show_excerpts: true
 
-# Minima settings
 Architect:
   skin: auto # auto | dark | classic | solarized | solarized-dark
   date_format: "%B %d, %Y"
@@ -56,6 +55,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
 
 
 
