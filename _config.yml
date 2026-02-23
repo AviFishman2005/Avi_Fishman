@@ -3,10 +3,6 @@ theme: minima
 title: Avi Fishman
 description: >
   Essays that I think are worth writing.
-
-author:
-  name: Avi Fishman
-
 # Site behavior
 future: true
 show_excerpts: true
@@ -60,4 +56,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
 
