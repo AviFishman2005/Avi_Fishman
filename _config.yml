@@ -7,13 +7,6 @@ description: >
 future: true
 show_excerpts: true
 
-Architect:
-  skin: auto # auto | dark | classic | solarized | solarized-dark
-  date_format: "%B %d, %Y"
-  social_links:
-    github: avi-fishman   # change if needed
-    # twitter: your_handle
-    # linkedin: your_handle
 
 # Markdown & syntax highlighting
 markdown: kramdown
@@ -55,6 +48,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
 
 
 
