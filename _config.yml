@@ -2,3 +2,5 @@ theme: minima
 title: Avi Fishman's blog
 description: A place for me to post my writing
 author: Avi Fishman
+future: true
+
