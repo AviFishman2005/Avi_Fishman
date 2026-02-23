@@ -6,10 +6,6 @@ description: >
 
 author:
   name: Avi Fishman
-  email: # optional
-  twitter: # optional
-  github: # optional
-  linkedin: # optional
 
 # Site behavior
 future: true
@@ -43,7 +39,6 @@ feed:
 
 # Navigation (top menu)
 header_pages:
-  - index.md
   - about.md
 
 # Defaults for posts
@@ -65,3 +60,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
