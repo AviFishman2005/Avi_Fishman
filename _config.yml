@@ -1,6 +1,67 @@
 theme: minima
-title: Avi Fishman's blog
-description: A place for me to post my writing
-author: Avi Fishman
-future: true
 
+title: Avi Fishman
+description: >
+  Essays that I think are worth writing.
+
+author:
+  name: Avi Fishman
+  email: # optional
+  twitter: # optional
+  github: # optional
+  linkedin: # optional
+
+# Site behavior
+future: true
+show_excerpts: true
+
+# Minima settings
+minima:
+  skin: auto # auto | dark | classic | solarized | solarized-dark
+  date_format: "%B %d, %Y"
+  social_links:
+    github: avi-fishman   # change if needed
+    # twitter: your_handle
+    # linkedin: your_handle
+
+# Markdown & syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feed & SEO
+feed:
+  path: atom.xml
+
+# Navigation (top menu)
+header_pages:
+  - index.md
+  - about.md
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Avi Fishman
+      comments: false
+
+# Permalinks (clean & essay-friendly)
+permalink: /:categories/:title/
+
+# Exclude dev files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
