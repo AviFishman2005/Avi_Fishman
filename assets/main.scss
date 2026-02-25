@@ -21,15 +21,144 @@ body {
 .hero .tagline { color: #374151; margin-bottom: 1rem; }
 .cta { display: inline-block; background:#2563eb; color:white; padding: .6rem 1rem; border-radius:8px; text-decoration:none; }
 
-.posts-list { max-width: 980px; margin: 2rem auto; padding: 0 1rem; }
-.posts-list h2 { margin-bottom: 1rem; }
-.cards { list-style: none; padding:0; margin:0; display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1rem; }
-.card { background: white; border-radius: 12px; padding: 1rem; box-shadow: 0 6px 18px rgba(15,23,42,0.06); transition: transform .12s ease, box-shadow .12s ease; }
-.card a { color: inherit; text-decoration: none; display:block; }
-.card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(15,23,42,0.08); }
-.card h3 { margin:0 0 .4rem; font-size: 1.05rem; }
-.card .excerpt { color:#475569; font-size:.95rem; margin-bottom:.6rem; }
-.card .meta { color:#94a3b8; font-size:.85rem; }
+/* Cleaner Homepage Design */
+.homepage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-minimal {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 3rem;
+}
+
+.hero-minimal h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.hero-minimal .subtitle {
+  font-size: 1.15rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.about-card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.about-card p {
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.email-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.email-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.essays-section {
+  margin-bottom: 4rem;
+}
+
+.essays-section h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+.essays-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.essay-item {
+  border-left: 3px solid #e5e7eb;
+  padding-left: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.essay-item:hover {
+  border-left-color: #2563eb;
+}
+
+.essay-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.essay-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #111827;
+  transition: color 0.2s ease;
+}
+
+.essay-item:hover h3 {
+  color: #2563eb;
+}
+
+.essay-date {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.essay-excerpt {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.link-secondary {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link-secondary:hover {
+  color: #1d4ed8;
+}
 
 /* Post Layout & Typography */
 .post-container {
