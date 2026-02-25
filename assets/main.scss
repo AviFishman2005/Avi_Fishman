@@ -21,143 +21,79 @@ body {
 .hero .tagline { color: #374151; margin-bottom: 1rem; }
 .cta { display: inline-block; background:#2563eb; color:white; padding: .6rem 1rem; border-radius:8px; text-decoration:none; }
 
-/* Cleaner Homepage Design */
+/* Modern Homepage */
 .homepage {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 5rem 1.5rem;
 }
 
-.hero-minimal {
-  padding: 4rem 0 3rem;
-  text-align: center;
+.page-header {
+  margin-bottom: 4rem;
   border-bottom: 1px solid #e5e7eb;
-  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
-.hero-minimal h1 {
-  font-size: 2.5rem;
+.page-header h1 {
+  font-size: 2.2rem;
   font-weight: 700;
   margin: 0 0 0.5rem;
-  color: #111827;
-  letter-spacing: -0.02em;
+  color: #000;
+  letter-spacing: -0.015em;
 }
 
-.hero-minimal .subtitle {
-  font-size: 1.15rem;
+.page-header .tagline {
+  font-size: 1rem;
   color: #6b7280;
-  margin-bottom: 2rem;
+  margin: 0 0 1rem;
   font-weight: 400;
 }
 
-.about-card {
-  background: #f9fafb;
-  padding: 2rem;
-  border-radius: 12px;
-  margin-top: 2rem;
-  border: 1px solid #e5e7eb;
-}
-
-.about-card p {
-  color: #374151;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
 .email-link {
+  display: inline-block;
   color: #2563eb;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
 }
 
 .email-link:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
+  opacity: 0.7;
 }
 
-.essays-section {
-  margin-bottom: 4rem;
-}
-
-.essays-section h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  color: #111827;
-}
-
-.essays-list {
+.posts-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0;
 }
 
-.essay-item {
-  border-left: 3px solid #e5e7eb;
-  padding-left: 1.5rem;
-  transition: border-color 0.2s ease;
+.post-item {
+  border-bottom: 1px solid #f3f4f6;
+  padding: 1.5rem 0;
+  transition: padding 0.2s ease;
 }
 
-.essay-item:hover {
-  border-left-color: #2563eb;
-}
-
-.essay-link {
+.post-item a {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-.essay-item h3 {
-  font-size: 1.2rem;
+.post-item:hover {
+  padding-left: 0.5rem;
+}
+
+.post-item h2 {
+  font-size: 1.1rem;
   font-weight: 600;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.4rem;
   color: #111827;
-  transition: color 0.2s ease;
 }
 
-.essay-item:hover h3 {
-  color: #2563eb;
-}
-
-.essay-date {
+.post-item time {
+  font-size: 0.85rem;
   color: #9ca3af;
-  font-size: 0.9rem;
-  margin: 0 0 0.75rem;
-}
-
-.essay-excerpt {
-  color: #4b5563;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.view-all {
-  text-align: center;
-  margin-top: 2.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e5e7eb;
-}
-
-.link-secondary {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.link-secondary:hover {
-  color: #1d4ed8;
 }
 
 /* Post Layout & Typography */
