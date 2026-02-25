@@ -2,18 +2,25 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post-container">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.author %}<span class="post-author">by {{ page.author }}</span>{% endif %}
+    </div>
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
 
-  {% if site.comments and site.comments_provider == "utterances" %}
-    {% include comments.html %}
-  {% endif %}
-
+  <footer class="post-footer">
+    {% if site.comments and site.comments_provider == "utterances" %}
+      <div class="comments-section">
+        <h2>Join the Discussion</h2>
+        {% include comments.html %}
+      </div>
+    {% endif %}
+  </footer>
 </article>
