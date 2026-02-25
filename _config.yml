@@ -5,7 +5,7 @@ description: >
   Essays that I think are worth writing.
 # Site behavior
 show_excerpts: true
-
+future: true
 
 # Markdown & syntax highlighting
 markdown: kramdown
